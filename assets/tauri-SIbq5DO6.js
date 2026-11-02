@@ -1,1 +1,0 @@
-import{invoke as t}from"./core-B9ij_roJ.js";function a(){return{kind:"tauri",execute(r,e=[]){return t("db_execute",{sql:r,params:e})},select(r,e=[]){return t("db_select",{sql:r,params:e})},batch(r){return t("db_batch",{statements:r.map(e=>({sql:e.sql,params:e.params||[]}))})},info(){return t("db_info")},recover(){return t("db_recover")}}}export{a as createTauriDriver};
